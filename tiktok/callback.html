@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Connecting TikTok - Atlas Cut Studios</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <h1>Connecting your TikTok account</h1>
+  <p id="msg">Returning you to the Atlas Cut Studios publishing tool...</p>
+</main>
+<script>
+// Registered TikTok redirect URI. It holds nothing itself: it passes TikTok's code and state straight back to
+// the publishing tool running on the studio's computer, which checks the state and exchanges the code.
+location.replace("http://127.0.0.1:8765/callback" + location.search);
+</script>
+</body>
+</html>
